@@ -13,8 +13,9 @@ document.getElementById("lancia").addEventListener("click", function(){
   console.log(num);
 
   testa.classList.remove("display-none");
-
+  testa.classList.remove("roll");
   croce.classList.remove("display-none");
+  croce.classList.remove("roll");
 
   // se è pari metto classe display none a croce altrimenti la metto a Testa
   if (num % 2){
