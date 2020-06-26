@@ -20,8 +20,18 @@ var i = 0;
 
   numero = Number(prompt("Inserisci il " + (i+1) + "° numero:"));
 
-  somma += numero;
+  if (!isNaN(numero)) {//se il numero inserito dall'utente è un numero (non non è un numero) lo sommo altrimenti decremento la i e si rifarà un altro ciclo while con lo stesso valore si i perchè prima lo decremento poi lo incremento
+
+    somma += numero; // += è la versione compatta di somma = somma +
+
+  }else{
+
+    i--;
+
+  }
+
   i++;
-}while (i < 5 && !isNaN(numero))
+
+}while (i < 5)
 
 console.log("La somma è: " + somma);

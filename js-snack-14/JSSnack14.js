@@ -1,12 +1,12 @@
 //Chiedi un numero di 4 cifre all’utente e calcola la somma di tutte le cifre che compongono il numero.
 
+var somma = 0;
 
+var numero;
 
 do{
 
- var somma = 0;
-
- var numero = prompt("Inserisci un numero di 4 cifre:");
+ numero = prompt("Inserisci un numero di 4 cifre:");
 
  for (var i = 0; i < numero.length && numero.length == 4 && !isNaN(numero); i++) { //anche nelle condizioni del for controllo che numero sia un numero e che sia di 4 cifre altrimenti non entro neanche nel for
 

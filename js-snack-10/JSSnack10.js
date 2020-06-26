@@ -6,7 +6,7 @@ var utente = prompt("Dobbiamo sapere se sei invitato. Prego inserisci il tuo nom
 
 var invitato = false;
 
-for (var i = 0; i < lista.length && invitato == false; i++) { // aggiungere nella condizione && invitato==false significa che se invitato diventa true quindi è stata trovata una corrispondenza il for smette di scorrere tutto l'array. 
+for (var i = 0; i < lista.length && invitato == false; i++) { // aggiungere nella condizione && invitato==false significa che se invitato diventa true quindi è stata trovata una corrispondenza il for smette di scorrere tutto l'array.
 
   lista[i] = lista[i].toLowerCase(); // to lowerCase mette tutto in minuscolo. così evita errori di confronto tra i nomi della lista e quello dell'utente per la questione case sensitive
 
